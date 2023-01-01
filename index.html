@@ -1,0 +1,51 @@
+<DOCTYPE! html>
+<html lang="en">
+  <head>
+    <title>Freecodecamp Survey</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">
+            Enter your name:
+            <input placeholder="Ben Jones" type="text" id="name" name="name" required/>
+            </label>
+            <label id="email-label" for="email">
+            Enter your email:
+            <input placeholder="abc@xy.com" type="email" id="email" name="email" required/>
+            </label>
+            <label id="number-label" for="email">
+            Enter your age:
+            <input placeholder="17" type="number" id="number" name="age" min="12" max="100" required/>
+        </label>
+        <label id="dropdown-label" for="dropdown">
+            What is your occupation:
+            <select id="dropdown" name="dropdown">
+              <option value="">None</option>
+              <option value="1">Student</option>
+              <option value="2">Engineer</option>
+              <option value="3">Freelancer</option>
+              <option value="4">Doctor</option>
+            </select>
+          </label>
+       <label for="t1">Enter some comments:
+          <textarea id="t1" name="t1" rows="5" cols="30" placeholder="Text area..."></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="r1"><input id="r1" value="1" type="radio" name="r" class="inline" /> radio 1</label>
+        <label for="r2"><input id="r2" value="2" type="radio" name="r" class="inline" /> radio 2</label>
+    
+     <label for="terms-and-conditions" name="terms-and-conditions">
+          <input value="1" id="c1" type="checkbox" required name="c1" class="inline" /> Checkbox
+    <input value="2" id="c2" type="checkbox" required name="c2" class="inline" /> Checkbox</a>
+    <button id="submit" type="submit">Submit</button>
+    </fieldset>
+    </form>
+  </body>
+</html>
